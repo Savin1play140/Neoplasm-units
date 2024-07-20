@@ -1,0 +1,22 @@
+{
+"name": "Neoplasm locus",
+"description": "Locus, but neoplasm!",
+"health": 2300,
+"armor": 9,
+"flying": false,
+"TargetAir": true,
+"speed": 5.3,
+"range": 20,
+"weapons": [
+   {
+      "name": "neo-locus-canon",
+      "reload": 10,
+      "recoil": 10,
+      "bullet": {
+        "damage": 40,
+        "speed": 3.33,
+        "type": "BasicBulletType"
+        }
+      }
+    ]
+}
