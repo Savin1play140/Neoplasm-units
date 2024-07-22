@@ -1,21 +1,54 @@
 {
+"type": "tank",
 "name": "Neoplasm locus",
 "description": "Locus, but neoplasm!",
+"hitSize": 18,
+"treadPullOffset": 5,
 "health": 2300,
+"rotateSpeed": 3,
 "armor": 9,
 "flying": false,
 "TargetAir": true,
-"speed": 5.3,
+"speed": 0.85,
 "range": 20,
+"treadRects": [
+    {
+      "x": 13,
+      "y": -38,
+      "width": 17,
+      "height": 76
+    }
+  ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
 "weapons": [
    {
+      "x": 0,
+      "y": 0,
       "name": "neo-locus-canon",
+      "mirror": false,
+      "shootSound": "bolt",
+      "layerOffset": 0.0001,
+      "heatColor": "bf4a32ff",
+      "rotate": true,
+      "rotateSpeed": 1.5,
       "reload": 10,
       "recoil": 10,
+      "cooldownTime": 30,
       "bullet": {
+        "width": 5,
         "damage": 40,
-        "speed": 3.33,
-        "type": "BasicBulletType"
+        "laserAbsorb": false,
+        "length": 160,
+        "type": "LaserBulletType",
+        "pierceBuilding": true,
+        "buildingDamageMultiplier": 1.9,
+        "lifetime": 30,
+        "hitColor": "bf3632ff",
+        "hitEffect": "hitBulletColor",
+        "smokeEffect": "shootSmallSmoke",
+        "shootEffect": "lightningCharge",
         }
       }
     ]
